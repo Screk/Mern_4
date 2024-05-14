@@ -171,8 +171,7 @@ const Titulos4 = styled(Titulos2)`
 
     @media (max-width: 1083px) {
         font-size: 15px;
-        display:flex;
-        justify-content:center;
+        
     }
 `
 
@@ -191,7 +190,7 @@ const Main = () => {
         <MainContent>
             <Div1>
                 <StyledContainer1>
-                    <Img src="../public/AppleLogo.png" alt="" />
+                    <Img src="../AppleLogo.png" alt="" />
                     <Div3>
                         <H2>Evento de Apple</H2>
                         <H3>Sigue el evento mañana a las 16:00</H3>
