@@ -463,7 +463,7 @@ const Header = () => {
             </StyledDiv1>    
         </ButtonWithMenu>
         <ButtonWithMenu 
-            buttonImg={'../public/Lupa3.png'}
+            buttonImg={'../Lupa3.png'}
             buttonText=""
             onSelect={setSelectedOption4}
         >   
@@ -479,7 +479,7 @@ const Header = () => {
             </StyledDiv3>
         </ButtonWithMenu>
         <ButtonWithMenu 
-            buttonImg={'../public/Bolsa2.png'}
+            buttonImg={'../Bolsa2.png'}
             buttonText=""
             onSelect={setSelectedOption4}
         >
