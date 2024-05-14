@@ -1,10 +1,10 @@
 import styled from "styled-components"
-import { StyledContainer4 } from "./ui/StyledContainer"
+import { StyledContainer4, StyledContainer6 } from "./ui/StyledContainer"
 import { StyledButton } from "./Header"
 
 const StyledFooter = styled.div`
     background-color: rgb(238, 238, 238);
-    height: 10vh;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -17,7 +17,7 @@ const Footer = () => {
         <StyledContainer4>
             Copyright © 2024 Apple Inc. Todos los derechos reservados.
         </StyledContainer4>
-        <StyledContainer4>
+        <StyledContainer6>
             <StyledButton>
                 Politica de privacidad
             </StyledButton>
@@ -36,7 +36,7 @@ const Footer = () => {
             <StyledButton>
                 Mapa del sitio
             </StyledButton>
-        </StyledContainer4>
+        </StyledContainer6>
     </StyledFooter>
   )
 }

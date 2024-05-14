@@ -43,10 +43,16 @@ export const StyledContainer4 = styled.div`
     justify-content: center;
     border-top: 1px solid grey;
     color: grey;
+    flex-wrap: wrap;
+    padding-left: 2.5rem;
 `
 
 export const StyledContainer5 = styled(StyledContainer1)`
     justify-content: start;
     overflow-y: hidden;
     overflow-x: hidden;
+`
+
+export const StyledContainer6 = styled(StyledContainer4)`
+    padding-left: 0;
 `

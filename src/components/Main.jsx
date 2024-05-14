@@ -41,13 +41,17 @@ const Div5 = styled(Div1)`
 const Div6 = styled(Div1)`
     flex-direction: row;
     position: absolute;
-    top: 9rem;
+    top: 8rem;
 `
 
 const Div8 = styled(Div1)`
     flex-direction: row;
     position: absolute;
     top: 8rem;
+
+    @media (max-width: 1083px) {
+        top: 7rem;
+    }
 `
 
 const Div7 = styled(Div6)`
@@ -163,6 +167,10 @@ const Titulos3 = styled.p`
     font-weigth: 100;
     position: absolute;
     font-family: 'Roboto', sans-serif;
+
+    @media (max-width: 1083px) {
+        top: 3rem;
+    }
 `
 
 const Titulos4 = styled(Titulos2)`
@@ -179,7 +187,20 @@ const Titulos5 = styled(Titulos3)`
     color: grey;
     font-size: 23px;
     width: 25rem;
-    align-items: center;
+
+
+    @media (max-width: 1083px) {
+        font-size: 15px;
+        width: 100%;
+        display:flex;
+        justify-content: center;
+    }
+`
+
+const Titulos6 = styled(Titulos5)`
+    @media (max-width: 1083px) {
+        padding-left: 2.5rem;
+    }
 `
 
 const Main = () => {
@@ -206,7 +227,7 @@ const Main = () => {
                             <AppleLink2 href="https://www.apple.com/es/shop/buy-iphone/iphone-15">Comprar</AppleLink2>
                         </Div4>
                     </Div5>
-                    <Img3 src="../public/iPhone15-2.png" alt="" />
+                    <Img3 src="../iPhone15-2.png" alt="" />
                 </StyledContainer5>
                 <StyledContainer2>
                     <Div3>
@@ -217,7 +238,7 @@ const Main = () => {
                             <AppleLink2 href="https://www.apple.com/es/shop/buy-iphone/iphone-15-pro">Comprar</AppleLink2>
                         </Div4>
                     </Div3>
-                    <Img2 src="../public/iPhone-15-pro.png" alt="" />
+                    <Img2 src="../iPhone-15-pro.png" alt="" />
                 </StyledContainer2>
             </Div1>
             <Div2>
@@ -228,7 +249,7 @@ const Main = () => {
                         <AppleLink3 href="https://www.apple.com/es/macbook-air/">Mas Informacion</AppleLink3>
                         <AppleLink2 href="https://www.apple.com/es/shop/buy-mac/macbook-air">Comprar</AppleLink2>
                     </Div8>
-                    <Img4 src="../public/Sin título3.png" alt="" />
+                    <Img4 src="../Sin título3.png" alt="" />
                 </StyledContainer3>
                 <StyledContainer3>
                     <Titulos2>WATCH</Titulos2>
@@ -238,7 +259,7 @@ const Main = () => {
                         <AppleLink3 href="https://www.apple.com/es/apple-watch-series-9/">Mas Informacion</AppleLink3>
                         <AppleLink2 href="https://www.apple.com/es/shop/goto/buy_watch/apple_watch_series_9">Comprar</AppleLink2>
                     </Div6>
-                    <Img4 src="../public/Sin título4.png" alt="" />
+                    <Img4 src="../Sin título4.png" alt="" />
                 </StyledContainer3>
                 <StyledContainer3>
                     <Titulos>iPad</Titulos>
@@ -246,7 +267,7 @@ const Main = () => {
                         <AppleLink3 href="https://www.apple.com/es/ipad/">Mas Informacion</AppleLink3>
                         <AppleLink2 href="https://www.apple.com/es/shop/buy-ipad">Comprar</AppleLink2>
                     </Div7>
-                    <Img4 src="../public/Sin título5.png" alt="" />
+                    <Img4 src="../Sin título5.png" alt="" />
                 </StyledContainer3>
                 <StyledContainer3>
                     <Titulos2>AirPods Pro</Titulos2>
@@ -255,7 +276,7 @@ const Main = () => {
                         <AppleLink3 href="https://www.apple.com/es/airpods-pro/">Mas Informacion</AppleLink3>
                         <AppleLink2 href="https://www.apple.com/es/shop/goto/product/MTJV3">Comprar</AppleLink2>
                     </Div6>
-                    <Img4 src="../public/Sin título6.png" alt="" />
+                    <Img4 src="../Sin título6.png" alt="" />
                 </StyledContainer3>
                 <StyledContainer3>
                     <Titulos>HomePod mini</Titulos>
@@ -263,15 +284,15 @@ const Main = () => {
                         <AppleLink3 href="https://www.apple.com/es/homepod-mini/">Mas Informacion</AppleLink3>
                         <AppleLink2 href="https://www.apple.com/es/shop/goto/buy_homepod/homepod_mini">Comprar</AppleLink2>
                     </Div7>
-                    <Img4 src="../public/Sin título7.png" alt="" />
+                    <Img4 src="../Sin título7.png" alt="" />
                 </StyledContainer3>
                 <StyledContainer3>
                     <Titulos>Apple Trade In</Titulos>
-                    <Titulos5>Consigue entre 150€ y 770€ al renovar tu iPhone 11 o posterior.</Titulos5>
+                    <Titulos6>Consigue entre 150€ y 770€ al renovar tu iPhone 11 o posterior.</Titulos6>
                     <Div6>
                         <AppleLink3 href="https://www.apple.com/es/shop/goto/trade_in">Ver estimación</AppleLink3>
                     </Div6>
-                    <Img4 src="../public/Sin título8.png" alt="" />
+                    <Img4 src="../Sin título8.png" alt="" />
                 </StyledContainer3>
             </Div2>
         </MainContent>
