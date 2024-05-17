@@ -1,5 +1,8 @@
 import styled from 'styled-components';
 import { useState } from 'react';
+import '@testing-library/jest-dom' 
+
+export { default as userEvent } from '@testing-library/user-event'
 
 const StyledHeader = styled.div`
     width: 100%;
@@ -13,7 +16,7 @@ const StyledHeader = styled.div`
     gap: 30px;
     position: fixed;
     z-index: 1000;
-
+    data-testid='Header'
 
 `;
 
@@ -184,7 +187,7 @@ const Header = () => {
 
   return (
     <StyledHeader>
-        <a href=""><Logo src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Apple_logo_black.svg/814px-Apple_logo_black.svg.png" alt="" /></a>
+        <a href=""><Logo src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Apple_logo_black.svg/814px-Apple_logo_black.svg.png" alt="Logo" /></a>
 
         <ButtonWithMenu 
             buttonText="Tienda "

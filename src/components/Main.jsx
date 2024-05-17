@@ -1,7 +1,6 @@
 import styled from "styled-components"
 import { StyledContainer1, StyledContainer2, StyledContainer3, StyledContainer5 } from "./ui/StyledContainer"
 import { MainContent } from "./Header";
-import { useState } from "react";
 
 
 
@@ -41,16 +40,16 @@ const Div5 = styled(Div1)`
 const Div6 = styled(Div1)`
     flex-direction: row;
     position: absolute;
-    top: 8rem;
+    top: 25%;
 `
 
 const Div8 = styled(Div1)`
     flex-direction: row;
     position: absolute;
-    top: 8rem;
+    top: 25%;
 
     @media (max-width: 1083px) {
-        top: 7rem;
+        
     }
 `
 
@@ -78,13 +77,14 @@ const Img2 = styled(Img)`
 `
 
 const Img3 = styled(Img)`
-    width: 60%;
-    height: 15rem;
+    width: 50rem;
+    height: 32vh;
     margin-top: 15rem;
 
     @media (max-width:1083px) {
-        width: 50rem;
+        width: 25rem;
     }
+
 `
 const Img4 = styled(Img)`
     width: 100%;
@@ -101,8 +101,8 @@ const AppleLink = styled.a`
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 2.5rem;
-    width: 10rem;
+    height: 4vh;
+    width: 9vw;
     color: white;
     font-weight: bold;
 
@@ -111,6 +111,10 @@ const AppleLink = styled.a`
         color: #0071e3;
     }
     
+    @media (max-width: 1023px) {
+        width: 30vw;
+        font-size: 12px
+    }
 `
 
 const AppleLink2 = styled(AppleLink)`
@@ -198,8 +202,11 @@ const Titulos5 = styled(Titulos3)`
 `
 
 const Titulos6 = styled(Titulos5)`
+    font-size: 20px;
+
     @media (max-width: 1083px) {
         padding-left: 2.5rem;
+        font-size: 14px;
     }
 `
 

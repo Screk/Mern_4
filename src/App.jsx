@@ -8,7 +8,7 @@ function App() {
   return (
     <>
       <div>
-        <Header />
+        <Header data-testid='Header'/>
         <Main />
         <Footer />
       </div>
